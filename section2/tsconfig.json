@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "strict": true,
+    // null값이 들어가지 않아야 하는 곳에 null이 들어가도 허용할건지!
+    // "strictNullChecks": false,  
+    "moduleDetection": "force"
+  },
+  "ts-node": {
+    "esm": true,
+  },
+  "include": ["src"]
+}
