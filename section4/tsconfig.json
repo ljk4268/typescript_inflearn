@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // 자바스크립트 버전 어떤걸로 컴파일 해줄까
+    "target": "ESNext",
+    // module은 commonJS로 할래 ES 모듈로 할래?
+    "module": "ESNext",
+    // 컴파일된 js파일 어느 폴더에 모아줄까?
+    "outDir": "dist",
+    // 타입검사 엄격하게 해줄까? 마이그레이션의 경우 false로 하는게 좋다고함
+    "strict": false,
+    // 만드는 파일들 전역모듈로 설정해줄까 개별모듈로 설정해줄까? 아래 해당 옵션 관련 내용 적어둠
+    "moduleDetection": "force",
+    // null값이 들어가지 않아야 하는 곳에 null이 들어가도 허용할건지!
+    "strictNullChecks": false
+  },
+  // 타입스크립트 모듈은 기본적으로 CommonJS를 따른다고함. export 같은거 사용하게 하려면 아래 설정 추가해야한다고 함
+  "ts-node": {
+    "esm": true
+  },
+  // 어떤 폴더에 있는 어떤 파일들 컴파일 해줄까?
+  // 아래는 src 폴더 안에 있는 파일은 다 컴파일 해달라는 의미. 9
+  "include": ["src"]
+}
